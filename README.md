@@ -13,5 +13,6 @@ AFTER:
 
 ## Mapping reads to reference genome (miRDeep2 tool)
 
-mapper.pl CH1_VE.fastq_output_truseq3.fastq -e -h -j -l 18 -m -p reference_genome/genome.fa -m -s reads.fa -t reads_vs_genome.arf -v
-miRDeep2.pl reads.fa reference_genome/genome.fa reads_vs_genome.arf none none none 2>report.log
+$ mapper.pl CH1_VE.fastq_output_truseq3.fastq -e -h -j -l 18 -m -p reference_genome/genome.fa -m -s reads.fa -t reads_vs_genome.arf -v
+
+$ miRDeep2.pl reads.fa reference_genome/genome.fa reads_vs_genome.arf none none none 2>report.log
