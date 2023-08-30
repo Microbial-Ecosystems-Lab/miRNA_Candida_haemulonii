@@ -9,3 +9,10 @@ https://rawcdn.githack.com/Microbial-Ecosystems-Lab/miRNA_Candida_haemulonii/cba
 
 AFTER:
 $
+
+
+## Create a mapping file with ARF format (miRDeep2 tool)
+
+Convert fastq to fasta (FASTX-toolkit)
+
+$ fastq_to_fasta -i file.fastq -o file.fasta
