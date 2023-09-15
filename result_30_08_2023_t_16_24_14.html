@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+    <html>
+    <head>
+    <title>miRDeep2</title>
+    <!-- CSS code -->
+    <style type="text/css">
+    body{
+      font: .75em Arial,sans-serif;
+      background: #FFFFFF;
+      color: #333333
+    }
+div#
+container
+{
+  width: 1000px;
+  margin:0 auto
+  }
+h1{
+  color: #F60;
+  margin: 1em 0 0;
+    letter-spacing: -2px;
+}
+p{
+  margin: 0 0 1.7em;
+}
+
+a.tooltip{
+	text-decoration:none;
+	color:black;
+        font-weight:bold;
+}
+
+a.tooltip:hover
+{    position: relative;
+     background: transparent;
+
+}
+
+a.tooltip span
+{    position: absolute;
+     visibility: hidden;
+
+     width: 20em;
+     top: 1.5em;
+     background: #ffffdd;
+}
+
+a.tooltip:hover span
+{    visibility: visible;   }
+
+
+a.tooltip2{
+	text-decoration:none;
+	color:black;
+        font-weight:bold;
+}
+
+a.tooltip2:hover
+{    position: relative;
+     background: transparent;
+
+}
+
+a.tooltip2 span
+{    position: absolute;
+     visibility: hidden;
+
+     width: 20em;
+     top: 1.5em;left:-10em;
+     background: #ffffdd;
+}
+
+a.tooltip2:hover span
+{    visibility: visible;   }
+
+
+a.tooltip3{
+	text-decoration:none;
+	color:black;
+        font-weight:bold;
+}
+
+a.tooltip3:hover
+{    position: relative;
+     background: transparent;
+
+}
+
+a.tooltip3 span
+{    position: absolute;
+     visibility: hidden;
+
+     width: 20em;
+     top: 3em;
+     background: #ffffdd;
+}
+
+a.tooltip3:hover span
+{    visibility: visible;   }
+
+
+a.tooltip4{
+	text-decoration:none;
+	color:black;
+        font-weight:bold;
+}
+
+a.tooltip4:hover
+{    position: relative;
+     background: transparent;
+
+}
+
+a.tooltip4 span
+{    position: absolute;
+     visibility: hidden;
+
+     width: 20em;
+     top:3em;left:-10em;
+     background: #ffffdd;
+}
+
+a.tooltip4:hover span
+{    visibility: visible;   }
+
+
+
+</style>
+
+    </head>
+    <body>
+    <table border="0" width="100%">
+    <colgroup>
+    <col width="5*">
+    <col width="5*">
+    </colgroup>
+    <tr height="200" valign="top">
+    <td><font face="Times New Roman" size="8">
+    <b>miRDeep2</b>
+
+
+    <br>
+    <br>
+    </font></td>
+    <td>.</td>
+    </tr>
+    </table>
+<h2>Parameters used</h2>
+ <table border="0">
+<tr><td>miRDeep2 version</td><td>2.0.1.3</td></tr><br>
+<tr><td>Program call</td><td>/temporario/zaramela/miniconda3/envs/bowtie2/bin/miRDeep2.pl reads.fa reference_genome/genome.fa reads_vs_genome.arf none none none</td><tr>
+<tr><td>Reads</td><td>reads.fa</td></tr>
+<tr><td>Genome</td><td>reference_genome/genome.fa</td></tr>
+<tr><td>Mappings</td><td>reads_vs_genome.arf</td></tr>
+<tr><td>Reference mature miRNAs</td><td>none</td></tr>
+<tr><td>Other mature miRNAs</td><td>none</td></tr>
+</table><br><br>
+<font face="Times New Roman" size="4">
+<b>Survey of miRDeep2 performance for score cut-offs -10 to 10</b>
+
+<font face="Times New Roman" size="3">
+<table border="1" >
+<th><a href="http://www.nature.com/nbt/journal/v26/n4/abs/nbt1394.html" target="blank" class="tooltip">miRDeep2 score<span>for details on how the log-odds score is calculated, see Friedlander et al., Nature Biotechnology, 2008.</span></a></th></a>
+
+<th><a href="#" class="tooltip">estimated signal-to-noise<span>for the given score cut-off, the signal-to-noise ratio is estimated as r = total miRNA hairpins reported / mean estimated false positive miRNA hairpins over 100 rounds of permuted controls.</span></a></th>
+
+<th><a href="#" class="tooltip">excision gearing<span>this is the minimum read stack height required for excising a potential miRNA precursor from the genome in this analysis.</span></a></th>
+
+<tr><td>10<td>0<td>1
+</td></tr>
+<tr><td>9<td>0<td>1
+</td></tr>
+<tr><td>8<td>0<td>1
+</td></tr>
+<tr><td>7<td>0<td>1
+</td></tr>
+<tr><td>6<td>0<td>1
+</td></tr>
+<tr><td>5<td>0<td>1
+</td></tr>
+<tr><td>4<td>0<td>1
+</td></tr>
+<tr><td>3<td>0<td>1
+</td></tr>
+<tr><td>2<td>0<td>1
+</td></tr>
+<tr><td>1<td>0<td>1
+</td></tr>
+<tr><td>0<td>0<td>1
+</td></tr>
+<tr bgcolor=silver><td>-1<td>0<td>1
+</td></tr>
+<tr bgcolor=silver><td>-2<td>0<td>1
+</td></tr>
+<tr bgcolor=silver><td>-3<td>0<td>1
+</td></tr>
+<tr bgcolor=silver><td>-4<td>0<td>1
+</td></tr>
+<tr bgcolor=silver><td>-5<td>1.9<td>1
+</td></tr>
+<tr bgcolor=silver><td>-6<td>1.2<td>1
+</td></tr>
+<tr bgcolor=silver><td>-7<td>1<td>1
+</td></tr>
+<tr bgcolor=silver><td>-8<td>0.8<td>1
+</td></tr>
+<tr bgcolor=silver><td>-9<td>0.7<td>1
+</td></tr>
+<tr bgcolor=silver><td>-10<td>0.7<td>1
+</td></tr>
+</table><br><br>
+
+<br>
+    <br>
+    <br><h2>novel miRNAs predicted by miRDeep2</h2><br>
+    <font face="Times New Roman" size="2">
+    <table border="1">
+<th><a href="" class="tooltip3">provisional id<span>this is a provisional miRNA name assigned by miRDeep2. The first part of the id designates the chromosome or genome contig on which the miRNA gene is located. The second part is a running number that is added to avoid identical ids. The running number is incremented by one for each potential miRNA precursor that is excised from the genome. Clicking this field will display a pdf of the structure, read signature and score breakdown of the reported miRNA.</span></a></th>
+
+<th><a href="" class="tooltip3">miRDeep2 score<span>the log-odds score assigned to the hairpin by miRDeep2</span></a></th>
+
+<th><a href="" class="tooltip3">estimated probability that the miRNA candidate is a true positive<span>the estimated probability that a predicted novel miRNA with a score of this or higher is a true positive. To see exactly how this probability is estimated, mouse over the 'novel miRNAs, true positives' in the table at the top of the webpage.</span></a></th>
+
+<th><a href="" class="tooltip3">rfam alert<span>this field indicates if the predicted miRNA hairpin has sequence similarity to reference rRNAs or tRNAs. Warnings in this field should overrule the estimated probability that a reported miRNA is a true positive (previous field).</span></a></th>
+
+<th><a href="" class="tooltip3">total read count<span>this is the sum of read counts for the predicted mature, loop and star miRNAs.</span></a></th>
+
+<th><a href="" class="tooltip3">mature read count<span>this is the number of reads that map to the predicted miRNA hairpin and are contained in the sequence covered by the predicted mature miRNA, including 2 nts upstream and 5 nts downstream.</span></a></th>
+
+<th><a href="" class="tooltip3">loop read count<span>this is the number of reads that map to the predicted miRNA hairpin and are contained in the sequence covered by the predicted miRNA loop, including 2 nts upstream and 5 nts downstream.</span></a></th>
+
+<th><a href="" class="tooltip3">star read count<span>this is the number of reads that map to the predicted miRNA hairpin and are contained in the sequence covered by the predicted star miRNA, including 2 nts upstream and 5 nts downstream.</span></a></th>
+
+<th><a href="http://www.ncbi.nlm.nih.gov/entrez/utils/fref.fcgi?PrId=3051&itool=AbstractPlus-def&uid=15217813&nlmid=9808944&db=pubmed&url=http://bioinformatics.oxfordjournals.org/cgi/pmidlookup?view=long&pmid=15217813" target="blank"class="tooltip3">significant randfold p-value<span>this field indicates if the estimated randfold p-value of the excised potential miRNA hairpin is equal to or lower than 0.05 (see Bonnet et al., Bioinformatics, 2004).</span></a></th>
+
+<th><a href="" class="tooltip3">miRBase miRNA<span>this field displays the ids of any reference mature miRNAs for the species that map perfectly (full length, no mismatches) to the reported miRNA hairpin. If this is the case, the reported miRNA hairpin is assigned as a known miRNA. If not, it is assigned as a novel miRNA. If more than one reference mature miRNA maps to the miRNA hairpin, then only the id of the reference miRBase miRNA that matches the predicted mature sequence is output.</span></a></th>
+
+<th><a href="" class="tooltip3">example miRBase miRNA with the same seed<span>this field displays the ids of any reference mature miRNAs from related species that have a seed sequence identical to that of the reported mature miRNA. The seed is here defined as nucleotides 2-8 from the 5' end of the mature miRNA. If more than one reference mature miRNA have identical seed, then only the id of the miRNA that occurs last in the input file of reference mature miRNAs from related species is displayed.</span></a></th>
+
+<th><a href="" class="tooltip3">UCSC browser<span>if a species name was input to miRDeep2, then clicking this field will initiate a UCSC blat search of the consensus precursor sequence against the reference genome.</span></a></th>
+
+<th><a href="" class="tooltip3">NCBI blastn<span>clicking this field will initiate a NCBI blastn search of the consensus precursor sequence against the nr/nt database (non-redundant collection of all NCBI nucleotide sequences).</span></a></th>
+
+<th><a href="" class="tooltip3">consensus mature sequence<span>this is the consensus mature miRNA sequence as inferred from the deep sequencing reads.</span></a></th>
+
+<th><a href="" class="tooltip3">consensus star sequence<span>this is the consensus star miRNA sequence as inferred from the deep sequencing reads.</span></a></th>
+
+<th><a href="" class="tooltip4">consensus precursor sequence<span>this is the consensus precursor miRNA sequence as inferred from the deep sequencing reads. Note that this is the inferred Drosha hairpin product, and therefore does not include substantial flanking genomic sequence as does most miRBase precursors.</span></a></th>
+
+<th><a href="" class="tooltip3">precursor coordinate<span>The given precursor coordinates refer do absolute position in the mapped reference sequence</span></a></th>
+
+</table></font></table>
+</body>
+</html>
