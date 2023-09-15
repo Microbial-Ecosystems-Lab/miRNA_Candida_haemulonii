@@ -16,3 +16,5 @@ AFTER:
 $ mapper.pl CH1_VE.fastq_output_truseq3.fastq -e -h -j -l 18 -m -p reference_genome/genome.fa -m -s reads.fa -t reads_vs_genome.arf -v
 
 $ miRDeep2.pl reads.fa reference_genome/genome.fa reads_vs_genome.arf none none none 2>report.log
+
+RESULTS: https://rawcdn.githack.com/Microbial-Ecosystems-Lab/miRNA_Candida_haemulonii/9be44e1d71a337c4f2fdcc9bcf2a2de07b4f2f1e/result_30_08_2023_t_16_24_14.html
